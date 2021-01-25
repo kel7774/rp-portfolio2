@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-              sh 'python manage.py runserver'
+              sh 'python3 manage.py runserver'
             }
         }
     }
