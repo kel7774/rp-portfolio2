@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
+                sh 'pip install django'
             }
         }
         stage('Test'){
