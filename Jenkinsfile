@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'python --version'
+                sh 'pip install django-jenkins'
             }
         }
         stage('Test'){
